@@ -6,7 +6,7 @@ const Header = () => {
   const { user } = useSelector((state) => state.userSlice);
   return (
     <div>
-      <Navbar className="min-w-screen py-1.5 rounded-none">
+      <Navbar className="min-w-full py-1.5 rounded-none">
         <div className="relative mx-auto flex items-center justify-between text-blue-gray-900">
           <Link to={"/"}>
             <Typography className="mr-4 ml-2 cursor-pointer py-0 font-medium">
