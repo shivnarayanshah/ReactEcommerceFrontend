@@ -13,7 +13,7 @@ const ProductList = () => {
   //   if (!data) return <p>No data to show </p>;
 
   return (
-    <div className="grid md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-5 gap-4 px-4 ">
+    <div className="grid grid-cols-2 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-5 gap-4 px-4 ">
       {data &&
         data.map(({ _id, title, price, image, rating }) => {
           return (
