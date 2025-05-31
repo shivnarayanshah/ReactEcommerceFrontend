@@ -13,7 +13,7 @@ import { useCreateOrderMutation } from "../orders/orderApi.js";
 
 const TABLE_HEAD = ["Product", "Title", "Price", "Quantity", "Total", "Action"];
 
-const Carts = () => {
+export default function Carts() {
   const { carts } = useSelector((state) => state.cartSlice);
   const dispatch = useDispatch();
   const totalAmount = carts.reduce(
@@ -138,9 +138,7 @@ const Carts = () => {
       )}
     </div>
   );
-};
-
-export default Carts;
+}
 
 function UpdateToCart({ product }) {
   const dispatch = useDispatch();
